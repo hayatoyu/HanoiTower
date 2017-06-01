@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HanoiTower
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+
+        static void move(char source,char temp,char des,int n)
+        {
+            if(n < 1)
+            {
+                Console.WriteLine("這不是合法數字");
+            }
+            else if (n == 1)
+            {
+                Console.WriteLine("move disk " + n + " from " + source + " to " + des);
+            }
+        }
+    }
+}
